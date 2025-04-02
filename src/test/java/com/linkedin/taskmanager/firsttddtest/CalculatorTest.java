@@ -15,4 +15,10 @@ public class CalculatorTest {
         //asserts
         assertEquals(2.0,result);
     }
+
+    @Test
+    void testDevideByTwo(){
+        Calculator calculator = new Calculator();
+        assertThrows(ArithmeticException.class,()->calculator.devide(5,0));
+    }
 }
