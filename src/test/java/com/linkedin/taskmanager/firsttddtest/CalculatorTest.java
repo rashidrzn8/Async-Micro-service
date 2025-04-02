@@ -21,4 +21,11 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         assertThrows(ArithmeticException.class,()->calculator.devide(5,0));
     }
+
+    @Test
+    void testDevideByMinusNumber(){
+        Calculator calculator=new Calculator();
+        double res = calculator.devide(-6,-2);
+        assertEquals(3.0,res);
+    }
 }
