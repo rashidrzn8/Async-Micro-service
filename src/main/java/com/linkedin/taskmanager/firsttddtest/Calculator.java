@@ -6,7 +6,7 @@ public class Calculator {
         if (b == 0){
             throw new ArithmeticException();
         }
-        double result= a/b;
-        return result;
+
+        return a/b;
     }
 }
