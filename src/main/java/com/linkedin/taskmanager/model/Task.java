@@ -20,6 +20,12 @@ public class Task {
     private String title;
     private String status;
 
+    public Task(Long id, String title, String status) {
+        this.id = id;
+        this.status = status;
+        this.title = title;
+    }
+
     public Task(String status, String title) {
         this.status = status;
         this.title = title;
